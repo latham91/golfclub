@@ -9,13 +9,14 @@ export default function CTA() {
             <br />
             Golfing Experience!
          </h2>
-         <Container className="relative flex justify-between border-2 rounded-3xl border-slate-500 h-[325px] bg-gradient-to-br from-slate-600 via-slate-700 to-slate-900">
+         <Container className="relative flex justify-between border-2 rounded-3xl shadow-md border-slate-500 h-[325px] bg-gradient-to-br from-slate-600 via-slate-700 to-slate-900">
             <div className="w-3/5">
                <Image
                   src={"/images/cta-image.png"}
                   height={700}
                   width={700}
                   alt="Golfer swinging club"
+                  draggable={false}
                   className="absolute -left-32 -top-40"
                />{" "}
             </div>
