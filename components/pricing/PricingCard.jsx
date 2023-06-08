@@ -5,6 +5,8 @@ const playfairDisplay = Playfair_Display({
    weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+import { TbCircleCheckFilled } from "react-icons/tb";
+
 export default function PricingCard({
    name,
    price,
@@ -25,7 +27,7 @@ export default function PricingCard({
             >
                {name}
                {popular && (
-                  <span className="px-4 py-1 text-base bg-teal-500 rounded-full">
+                  <span className="px-4 py-1 text-base rounded-full bg-gradient-to-br from-teal-500 to-teal-700">
                      Most Popular
                   </span>
                )}
@@ -33,7 +35,13 @@ export default function PricingCard({
             <p>{description}</p>
             <ul className="flex flex-col gap-3 p-3 font-semibold bg-white/5 backdrop-blur-sm rounded-2xl">
                {features.map((feature, index) => (
-                  <li key={index}>- {feature}</li>
+                  <li
+                     key={index}
+                     className="flex flex-row items-center gap-3 text-base"
+                  >
+                     <TbCircleCheckFilled size={18} />{" "}
+                     {feature}
+                  </li>
                ))}
             </ul>
             <div className="text-center">
@@ -46,7 +54,7 @@ export default function PricingCard({
             </div>
             <div className="text-center">
                <button
-                  className={`${playfairDisplay.className} px-10 py-3 font-semibold transition bg-teal-500 rounded-xl hover:bg-teal-600`}
+                  className={`${playfairDisplay.className} px-10 py-3 font-semibold transition bg-gradient-to-br from-teal-500 to-teal-700 border-2 rounded-xl border-white/50 hover:from-teal-600 hover:to-teal-800`}
                >
                   Choose this plan
                </button>

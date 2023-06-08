@@ -17,7 +17,7 @@ export default function Pricing() {
          features: [
             "5-day access to the course",
             "Weekday access to the clubhouse",
-            "Access to weekday & sunday competitions",
+            "Entry to weekday & sunday competitions",
             "Access to early morning tee-times",
             "Access to Top Tracer driving range",
             "Access to chipping greens",
@@ -51,7 +51,7 @@ export default function Pricing() {
          features: [
             "6-day access to the course",
             "Unlimited access to the clubhouse",
-            "Access to weekday & sunday competitions",
+            "Entry to weekday & sunday competitions",
             "Access to early morning tee-times",
             "Access to Top Tracer driving range",
             "Access to chipping greens",

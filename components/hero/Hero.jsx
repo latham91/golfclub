@@ -55,7 +55,7 @@ export default function Hero() {
                   </p>
                   <div className="z-10 mt-6">
                      <button
-                        className={`${playfairDisplay.className} px-6 py-3 mt-5 text-white border-2 rounded-xl bg-gradient-to-br from-green-500 to-green-700 border-white/70 hover:bg-green-700`}
+                        className={`${playfairDisplay.className} px-6 py-3 mt-5 text-white border-2 rounded-xl bg-gradient-to-br from-green-500 to-green-700 border-white/70 hover:from-green-600 hover:to-green-800 font-semibold`}
                      >
                         Book a Tee Time
                      </button>
