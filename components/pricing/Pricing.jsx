@@ -65,7 +65,7 @@ export default function Pricing() {
 
    return (
       <Container className="pb-20">
-         <div className="flex flex-col items-center justify-center mb-16">
+         <div className="flex flex-col items-center justify-center px-10 mb-16 text-center md:px-5">
             <h1
                className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white`}
             >
@@ -91,7 +91,7 @@ export default function Pricing() {
                Flexible, Junior and Student))
             </p>
          </div>
-         <div className="grid grid-cols-3 gap-5 mb-10">
+         <div className="grid grid-cols-1 gap-5 px-10 mb-10 md:grid-cols-2 lg:grid-cols-3 md:px-5">
             {memberships.map((membership, index) => (
                <PricingCard
                   key={index}

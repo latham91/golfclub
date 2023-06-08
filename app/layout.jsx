@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import { Raleway } from "next/font/google";
 import Footer from "@/components/footer/Footer";
+import Image from "next/image";
 
 const raleway = Raleway({
    subsets: ["latin"],
@@ -26,11 +27,18 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body
-            className={`${raleway.className} bg-slate-900`}
+            className={`${raleway.className} bg-slate-900 relative`}
          >
             <Navbar />
             {children}
             <Footer />
+
+            <Image
+               src={"/images/about-abstract.png"}
+               fill
+               className="absolute top-0 left-0 w-full h-full object-fit opacity-20 -z-10 mix-blend-plus-lighter"
+               draggable={false}
+            />
          </body>
       </html>
    );

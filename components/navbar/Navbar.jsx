@@ -36,7 +36,7 @@ export default function Navbar() {
 
    return (
       <nav
-         className={`${playfairDisplay.className} fixed w-full z-50 bg-slate-800/90 backdrop-blur-sm py-4 text-neutral-50 shadow-md`}
+         className={`${playfairDisplay.className} fixed w-full z-50 bg-slate-800/90 backdrop-blur-sm py-4 px-10 lg:px-5 text-neutral-50 shadow-md`}
       >
          <Container className="flex items-center justify-between">
             <Link
@@ -55,7 +55,7 @@ export default function Navbar() {
                </span> */}
             </Link>
             <div className="flex items-center gap-10">
-               <ul className="flex items-center gap-6">
+               <ul className="items-center hidden gap-6 lg:flex">
                   {links.map((link) => (
                      <li key={link.name}>
                         <Link
@@ -67,13 +67,13 @@ export default function Navbar() {
                      </li>
                   ))}
                </ul>
-               <div>|</div>
+               <div className="hidden lg:block">|</div>
                <div className="relative">
                   <div
                      onMouseEnter={() =>
                         setUserMenuOpen(true)
                      }
-                     className="flex flex-row items-center gap-1 cursor-pointer hover:text-purple-800"
+                     className="flex flex-row items-center gap-1 cursor-pointer hover:text-teal-500"
                   >
                      <div className="flex flex-row items-center gap-3">
                         <Avatar src="/images/profile.png" />

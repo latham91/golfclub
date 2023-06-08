@@ -15,10 +15,10 @@ export default function About() {
    return (
       <div className="relative">
          <Container className="py-5 mb-16">
-            <div className="flex justify-between gap-16 mb-10">
+            <div className="flex flex-col justify-between gap-16 px-10 mb-10 text-center lg:flex-row md:text-left md:px-5">
                <div>
                   <h1
-                     className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white`}
+                     className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white text-center lg:text-left`}
                   >
                      About the club
                   </h1>
@@ -67,19 +67,13 @@ export default function About() {
                      width={3500}
                      height={1000}
                      alt="Golf Course Green"
+                     draggable={false}
                      className="shadow-lg rounded-3xl object-fit shadow-black/30"
                   />
                </div>
             </div>
             <Carousel />
          </Container>
-         <Image
-            src={"/images/about-abstract.png"}
-            width={2000}
-            height={200}
-            className="absolute top-0 opacity-20 -z-10 mix-blend-plus-lighter"
-            draggable={false}
-         />
       </div>
    );
 }

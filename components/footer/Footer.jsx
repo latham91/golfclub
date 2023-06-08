@@ -18,18 +18,19 @@ import Link from "next/link";
 
 export default function Footer() {
    return (
-      <footer className="pt-12 border-t-2 bg-gradient-to-br border-white/10 from-slate-800 to-slate-900">
-         <Container className="flex justify-between">
-            <div className="flex flex-row gap-8">
+      <footer className="border-t-2 bg-gradient-to-br border-white/10 from-slate-800 to-slate-900">
+         <Container className="flex items-center justify-between px-10 md:px-5">
+            <div className="flex flex-row gap-8 py-10">
                <Image
                   src={"/images/pgclogo.png"}
-                  width={100}
-                  height={100}
+                  width={130}
+                  height={130}
                   alt="Preston Golf Club Logo"
+                  draggable={false}
                />
                <div className="text-white">
                   <h3
-                     className={`${playfairDisplay.className} text-3xl font-semibold`}
+                     className={`${playfairDisplay.className} text-3xl font-semibold mb-3`}
                   >
                      Preston Golf Club
                   </h3>
@@ -57,7 +58,7 @@ export default function Footer() {
                   </p>
                </div>
             </div>
-            <div className="flex flex-col text-right text-white">
+            <div className="flex-col hidden text-right text-white lg:flex">
                <h3
                   className={`${playfairDisplay.className} mb-3 text-3xl font-semibold`}
                >
@@ -93,8 +94,8 @@ export default function Footer() {
                </div>
             </div>
          </Container>
-         <div className="py-3 mt-10 text-right bg-slate-800 text-slate-600">
-            <Container>
+         <div className="py-3 text-right bg-slate-800 text-slate-600 ">
+            <Container className="px-10 md:px-5">
                Website designed with ❤️ by{" "}
                <Link
                   href="https://github.com/ddastardly91"

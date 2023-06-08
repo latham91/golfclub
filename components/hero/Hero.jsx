@@ -10,14 +10,15 @@ import Container from "../utility/Container";
 
 export default function Hero() {
    return (
-      <Container hero className="relative">
+      <Container hero className="relative pt-20 md:pt-0">
          <div className="relative">
             <Image
                src={"/images/championship.png"}
                width={120}
                height={120}
                alt="England Golf Championship Venue"
-               className="absolute z-10 p-3 bg-white border-2 rounded-full border-black/50 right-52 top-32"
+               draggable={false}
+               className="absolute z-10 hidden p-3 bg-white border-2 rounded-full lg:block border-black/50 right-52 top-32"
             />
             <Image
                src="/images/hero-a.jpg"
@@ -38,6 +39,7 @@ export default function Hero() {
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
+                     className="hidden lg:block md:block"
                   />
 
                   <h1
@@ -45,7 +47,7 @@ export default function Hero() {
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
-                     className={`${playfairDisplay.className} text-center text-white mb-5 text-5xl font-extrabold xl:text-9xl`}
+                     className={`${playfairDisplay.className} text-center text-white mb-5 text-5xl font-extrabold lg:text-8xl md:text-7xl`}
                   >
                      Welcome to
                      <br />
@@ -56,7 +58,7 @@ export default function Hero() {
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
-                     className="text-xl text-white"
+                     className="z-10 hidden text-white md:block sm:text-sm lg:text-xl"
                   >
                      A stunning parkland course situated in
                      the heart of Preston, Lancashire

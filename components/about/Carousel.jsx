@@ -4,7 +4,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 
-export default function Carousel() {
+export default function Carousel({ className }) {
    const [sliderRef] = useKeenSlider(
       {
          loop: true,
@@ -54,7 +54,7 @@ export default function Carousel() {
    return (
       <div
          ref={sliderRef}
-         className="shadow-md rounded-3xl keen-slider shadow-black/50"
+         className={`${className} shadow-md rounded-3xl keen-slider shadow-black/50`}
       >
          <div className="shadow-md keen-slider__slide shadow-black/50">
             <Image

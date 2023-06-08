@@ -10,23 +10,23 @@ import Container from "../utility/Container";
 
 export default function CTA() {
    return (
-      <div className="mb-48">
+      <div className="relative px-10 mb-48 md:px-5">
          <h2
-            className={`${playfairDisplay.className} mb-24 text-6xl font-bold text-center text-white`}
+            className={`${playfairDisplay.className} mb-16 md:mb-24 text-5xl font-bold text-center text-white md:text-6xl`}
          >
             Book Now for an Unforgettable
             <br />
             Golfing Experience!
          </h2>
          <Container className="relative flex justify-between border-2 rounded-2xl shadow-md border-slate-500 h-[325px] bg-gradient-to-br from-slate-600 via-slate-700 to-slate-900">
-            <div className="w-3/5">
+            <div className="hidden w-3/5 md:w-4/5 md:block lg:w-3/5">
                <Image
                   src={"/images/cta-image.png"}
                   height={700}
                   width={700}
                   alt="Golfer swinging club"
                   draggable={false}
-                  className="absolute -left-32 -top-40"
+                  className="absolute -left-32 -top-40 md:w-[500px] lg:w-[700px] md:-top-28 lg:-top-40"
                />{" "}
             </div>
             <div className="flex flex-col px-6 py-12 justify-evenly">
