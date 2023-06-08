@@ -1,5 +1,12 @@
 "use client";
 
+import { Playfair_Display } from "next/font/google";
+
+const playfairDisplay = Playfair_Display({
+   subsets: ["latin"],
+   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 import Image from "next/image";
 import Container from "../utility/Container";
 import {
@@ -7,10 +14,11 @@ import {
    FaInstagram,
    FaTwitterSquare,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
    return (
-      <footer className="py-12 border-t-2 bg-gradient-to-br border-white/10 from-slate-800 to-slate-900">
+      <footer className="pt-12 border-t-2 bg-gradient-to-br border-white/10 from-slate-800 to-slate-900">
          <Container className="flex justify-between">
             <div className="flex flex-row gap-8">
                <Image
@@ -20,21 +28,42 @@ export default function Footer() {
                   alt="Preston Golf Club Logo"
                />
                <div className="text-white">
-                  <h3 className="text-2xl font-semibold">
+                  <h3
+                     className={`${playfairDisplay.className} text-3xl font-semibold`}
+                  >
                      Preston Golf Club
                   </h3>
                   <p>Fulwood Hall Lane</p>
                   <p>Fulwood</p>
                   <p>Preston</p>
                   <p>PR2 8DD</p>
-                  <p>Tel: 01772 700011</p>
+                  <p>
+                     Email:{" "}
+                     <Link
+                        href="mailto:generalmanager@prestongolfclub.com"
+                        className="font-semibold text-teal-500 hover:underline"
+                     >
+                        generalmanager@prestongolfclub.com
+                     </Link>
+                  </p>
+                  <p>
+                     Tel:{" "}
+                     <Link
+                        href="tel:+441772700011"
+                        className="font-semibold text-teal-500 hover:underline"
+                     >
+                        01772 700011
+                     </Link>
+                  </p>
                </div>
             </div>
-            <div className="text-white">
-               <h3 className="mb-3 text-xl font-semibold">
+            <div className="flex flex-col text-right text-white">
+               <h3
+                  className={`${playfairDisplay.className} mb-3 text-3xl font-semibold`}
+               >
                   Social Media
                </h3>
-               <div className="flex items-center gap-3">
+               <div className="flex items-center justify-end gap-3 mb-7">
                   <FaFacebookSquare
                      size={32}
                      className="transition cursor-pointer hover:text-blue-500"
@@ -48,8 +77,34 @@ export default function Footer() {
                      className="transition cursor-pointer hover:text-blue-300"
                   />
                </div>
+               <div
+                  className={`${playfairDisplay.className} flex flex-col gap-3 text-right`}
+               >
+                  <h3>Subscribe to the newsletter</h3>
+                  <div className="flex flex-row gap-3">
+                     <input
+                        type="email"
+                        className="px-4 py-2 w-[350px] rounded-xl text-slate-800 font-semibold"
+                     />
+                     <button className="px-4 py-2 bg-gradient-to-br from-green-500 to-green-700 rounded-xl">
+                        Subscribe
+                     </button>
+                  </div>
+               </div>
             </div>
          </Container>
+         <div className="py-3 mt-10 text-right bg-slate-800 text-slate-600">
+            <Container>
+               Website designed with ❤️ by{" "}
+               <Link
+                  href="https://github.com/ddastardly91"
+                  target="_blank"
+                  className="font-semibold text-slate-500 hover:underline"
+               >
+                  Aaron Latham
+               </Link>
+            </Container>
+         </div>
       </footer>
    );
 }

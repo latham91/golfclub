@@ -1,5 +1,12 @@
 "use client";
 
+import { Playfair_Display } from "next/font/google";
+
+const playfairDisplay = Playfair_Display({
+   subsets: ["latin"],
+   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 import Container from "../utility/Container";
 import Image from "next/image";
 import Carousel from "./Carousel";
@@ -10,7 +17,9 @@ export default function About() {
          <Container className="py-5 mb-16">
             <div className="flex justify-between gap-16 mb-10">
                <div>
-                  <h1 className="py-5 text-5xl font-bold text-white">
+                  <h1
+                     className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white`}
+                  >
                      About the club
                   </h1>
                   <p className="mb-5 text-white">

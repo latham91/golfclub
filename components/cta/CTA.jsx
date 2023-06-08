@@ -1,15 +1,24 @@
+import { Playfair_Display } from "next/font/google";
+
+const playfairDisplay = Playfair_Display({
+   subsets: ["latin"],
+   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 import Image from "next/image";
 import Container from "../utility/Container";
 
 export default function CTA() {
    return (
       <div className="mb-48">
-         <h2 className="mb-24 text-5xl font-bold text-center text-white">
+         <h2
+            className={`${playfairDisplay.className} mb-24 text-6xl font-bold text-center text-white`}
+         >
             Book Now for an Unforgettable
             <br />
             Golfing Experience!
          </h2>
-         <Container className="relative flex justify-between border-2 rounded-3xl shadow-md border-slate-500 h-[325px] bg-gradient-to-br from-slate-600 via-slate-700 to-slate-900">
+         <Container className="relative flex justify-between border-2 rounded-2xl shadow-md border-slate-500 h-[325px] bg-gradient-to-br from-slate-600 via-slate-700 to-slate-900">
             <div className="w-3/5">
                <Image
                   src={"/images/cta-image.png"}
@@ -21,7 +30,7 @@ export default function CTA() {
                />{" "}
             </div>
             <div className="flex flex-col px-6 py-12 justify-evenly">
-               <p className="mb-10 text-lg font-semibold text-center text-white">
+               <p className="mb-10 text-lg text-center text-white">
                   Book now to secure your tee time and
                   embark on an unforgettable golfing
                   adventure. Experience the tranquility of
@@ -33,7 +42,9 @@ export default function CTA() {
                   Don't miss out on creating lasting
                   memories. Reserve your spot today!
                </p>
-               <button className="py-3 font-semibold text-white transition bg-gradient-to-br from-green-500 to-green-700 rounded-xl px-7 hover:opacity-90">
+               <button
+                  className={`${playfairDisplay.className} py-3 font-semibold text-white transition bg-gradient-to-br from-green-500 to-green-700 rounded-xl px-7 hover:opacity-90`}
+               >
                   Reserve your tee time!
                </button>
             </div>

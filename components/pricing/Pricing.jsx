@@ -1,3 +1,10 @@
+import { Playfair_Display } from "next/font/google";
+
+const playfairDisplay = Playfair_Display({
+   subsets: ["latin"],
+   weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 import Container from "../utility/Container";
 import PricingCard from "./PricingCard";
 
@@ -59,7 +66,9 @@ export default function Pricing() {
    return (
       <Container className="pb-20">
          <div className="flex flex-col items-center justify-center mb-16">
-            <h1 className="py-5 text-5xl font-bold text-white">
+            <h1
+               className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white`}
+            >
                Membership Options
             </h1>
             <p className="mb-5 text-center text-white">
