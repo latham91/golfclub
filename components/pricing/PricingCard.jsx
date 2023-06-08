@@ -37,7 +37,9 @@ export default function PricingCard({
                ))}
             </ul>
             <div className="text-center">
-               <h2 className="mb-1 text-5xl font-bold">
+               <h2
+                  className={`${playfairDisplay.className} mb-1 text-5xl font-bold`}
+               >
                   {price}
                </h2>
                <p>vat included.</p>
