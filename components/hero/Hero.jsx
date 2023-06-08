@@ -13,6 +13,13 @@ export default function Hero() {
       <Container hero className="relative">
          <div className="relative">
             <Image
+               src={"/images/championship.png"}
+               width={120}
+               height={120}
+               alt="England Golf Championship Venue"
+               className="absolute z-10 p-3 bg-white border-2 rounded-full border-black/50 right-52 top-32"
+            />
+            <Image
                src="/images/hero-a.jpg"
                width="1920"
                height="500"
@@ -32,6 +39,7 @@ export default function Hero() {
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
                   />
+
                   <h1
                      style={{
                         filter:
