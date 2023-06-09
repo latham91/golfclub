@@ -64,14 +64,14 @@ export default function Pricing() {
    ];
 
    return (
-      <Container className="pb-20">
-         <div className="flex flex-col items-center justify-center px-10 mb-16 text-center md:px-5">
+      <Container className="mb-12 md:mb-20">
+         <div className="flex flex-col items-center justify-center px-5 mb-16 text-center">
             <h1
-               className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white`}
+               className={`${playfairDisplay.className} py-5 text-3xl md:text-6xl font-bold text-white`}
             >
                Membership Options
             </h1>
-            <p className="mb-5 text-center text-white">
+            <p className="mb-5 text-sm text-center text-white md:text-base">
                Amidst life's tapestry, a yearning for change
                arises. Rekindle your love for golf, long
                dormant. Or embark on a new journey,
@@ -91,7 +91,7 @@ export default function Pricing() {
                Flexible, Junior and Student))
             </p>
          </div>
-         <div className="grid grid-cols-1 gap-5 px-10 mb-10 md:grid-cols-2 lg:grid-cols-3 md:px-5">
+         <div className="grid grid-cols-1 gap-5 px-5 mb-10 lg:grid-cols-3">
             {memberships.map((membership, index) => (
                <PricingCard
                   key={index}

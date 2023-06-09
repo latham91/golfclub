@@ -28,17 +28,19 @@ export default function PricingCard({
                >
                   {name}
                   {popular && (
-                     <span className="px-4 py-1 text-base rounded-full bg-gradient-to-br from-teal-500 to-teal-700">
+                     <span className="px-4 py-1 text-base rounded-full max-sm:text-center bg-gradient-to-br from-teal-500 to-teal-700">
                         Most Popular
                      </span>
                   )}
                </h1>
-               <p>{description}</p>
+               <p className="text-sm md:text-base">
+                  {description}
+               </p>
                <ul className="flex flex-col gap-3 p-3 font-semibold bg-white/5 backdrop-blur-sm rounded-2xl">
                   {features.map((feature, index) => (
                      <li
                         key={index}
-                        className="flex flex-row items-center gap-3 text-base"
+                        className="flex flex-row items-center gap-3 text-sm md:text-base"
                      >
                         <TbCircleCheckFilled size={18} />{" "}
                         {feature}

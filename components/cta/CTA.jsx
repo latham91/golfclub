@@ -10,9 +10,9 @@ import Container from "../utility/Container";
 
 export default function CTA() {
    return (
-      <div className="relative px-10 mb-48 md:px-5">
+      <div className="relative px-5 mb-12 md:mb-36 lg:mb-48">
          <h2
-            className={`${playfairDisplay.className} mb-16 md:mb-24 text-5xl font-bold text-center text-white md:text-6xl`}
+            className={`${playfairDisplay.className} mb-16 md:mb-24 text-3xl font-bold text-center text-white md:text-6xl`}
          >
             Book Now for an Unforgettable
             <br />
@@ -30,7 +30,7 @@ export default function CTA() {
                />{" "}
             </div>
             <div className="flex flex-col px-6 py-12 justify-evenly">
-               <p className="mb-10 text-lg text-center text-white">
+               <p className="mb-10 text-sm text-center text-white md:text-lg">
                   Book now to secure your tee time and
                   embark on an unforgettable golfing
                   adventure. Experience the tranquility of

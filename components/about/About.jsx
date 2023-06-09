@@ -15,14 +15,14 @@ export default function About() {
    return (
       <div className="relative">
          <Container className="py-5 mb-16">
-            <div className="flex flex-col justify-between gap-16 px-10 mb-10 text-center lg:flex-row md:text-left md:px-5">
+            <div className="flex flex-col justify-between gap-16 px-5 mb-10 text-center lg:flex-row md:text-left">
                <div>
                   <h1
-                     className={`${playfairDisplay.className} py-5 text-6xl font-bold text-white text-center lg:text-left`}
+                     className={`${playfairDisplay.className} py-5 text-3xl md:text-6xl mt-12 md:mt-0 font-bold text-white text-center lg:text-left`}
                   >
                      About the club
                   </h1>
-                  <p className="mb-5 text-white">
+                  <p className="mb-5 text-sm text-white md:text-base">
                      Nestled amidst 120 acres of enchanting
                      parkland, where serenity meets
                      grandeur, lies the illustrious Preston
@@ -48,7 +48,7 @@ export default function About() {
                      destination for both social gatherings
                      and spirited competitions.
                   </p>
-                  <p className="text-white">
+                  <p className="text-sm text-white md:text-base">
                      Preston Golf Club boasts a plethora of
                      enticing packages tailored for society
                      events, corporate golf days, or simply

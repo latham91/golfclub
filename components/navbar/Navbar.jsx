@@ -36,7 +36,7 @@ export default function Navbar() {
 
    return (
       <nav
-         className={`${playfairDisplay.className} fixed w-full z-50 bg-slate-800/90 backdrop-blur-sm py-4 px-10 lg:px-5 text-neutral-50 shadow-md`}
+         className={`${playfairDisplay.className} fixed w-full z-50 bg-slate-800/90 backdrop-blur-sm py-4 px-5 border-b-2 border-white/20 text-neutral-50`}
       >
          <Container className="flex items-center justify-between">
             <Link
@@ -72,6 +72,9 @@ export default function Navbar() {
                   <div
                      onMouseEnter={() =>
                         setUserMenuOpen(true)
+                     }
+                     onClick={() =>
+                        setUserMenuOpen(!UserMenuOpen)
                      }
                      className="flex flex-row items-center gap-1 cursor-pointer hover:text-teal-500"
                   >

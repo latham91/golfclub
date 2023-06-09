@@ -19,7 +19,7 @@ import Link from "next/link";
 export default function Footer() {
    return (
       <footer className="border-t-2 bg-gradient-to-br border-white/10 from-slate-800 to-slate-900">
-         <Container className="flex items-center justify-between px-10 md:px-5">
+         <Container className="flex items-center justify-between px-5">
             <div className="flex flex-row gap-8 py-10">
                <Image
                   src={"/images/pgclogo.png"}
@@ -42,7 +42,7 @@ export default function Footer() {
                      Email:{" "}
                      <Link
                         href="mailto:generalmanager@prestongolfclub.com"
-                        className="font-semibold text-teal-500 hover:underline"
+                        className="hidden font-semibold text-teal-500 hover:underline md:block"
                      >
                         generalmanager@prestongolfclub.com
                      </Link>
@@ -94,8 +94,8 @@ export default function Footer() {
                </div>
             </div>
          </Container>
-         <div className="py-3 text-right bg-slate-800 text-slate-600 ">
-            <Container className="px-10 md:px-5">
+         <div className="py-3 text-center md:text-right bg-slate-800 text-slate-600 ">
+            <Container className="px-10 text-sm md:px-5 md:text-base">
                Website designed with ❤️ by{" "}
                <Link
                   href="https://github.com/ddastardly91"

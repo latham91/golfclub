@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             <Image
                src={"/images/about-abstract.png"}
                fill
-               className="absolute top-0 left-0 w-full h-full object-fit opacity-20 -z-10 mix-blend-plus-lighter"
+               className="absolute top-0 left-0 w-full h-full opacity-20 object-fit -z-10 mix-blend-plus-lighter"
                draggable={false}
             />
          </body>

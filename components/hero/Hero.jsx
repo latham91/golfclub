@@ -39,7 +39,7 @@ export default function Hero() {
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
-                     className="hidden lg:block md:block"
+                     className="z-10 lg:block md:block"
                   />
 
                   <h1
@@ -47,7 +47,7 @@ export default function Hero() {
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
-                     className={`${playfairDisplay.className} text-center text-white mb-5 text-5xl font-extrabold lg:text-8xl md:text-7xl`}
+                     className={`${playfairDisplay.className} hidden lg:block md:block z-10 text-center text-white mb-5 text-5xl font-extrabold lg:text-8xl md:text-7xl`}
                   >
                      Welcome to
                      <br />
@@ -65,7 +65,7 @@ export default function Hero() {
                   </p>
                   <div className="z-10 mt-6">
                      <button
-                        className={`${playfairDisplay.className} px-6 py-3 mt-5 text-white border-2 rounded-xl bg-gradient-to-br from-green-500 to-green-700 border-white/70 hover:from-green-600 hover:to-green-800 font-semibold`}
+                        className={`${playfairDisplay.className} px-6 py-3 mt-0 md:mt-5 text-white border-2 rounded-xl bg-gradient-to-br from-green-500 to-green-700 border-white/70 hover:from-green-600 hover:to-green-800 font-semibold`}
                      >
                         Book a Tee Time
                      </button>

@@ -52,45 +52,47 @@ export default function Carousel({ className }) {
    );
 
    return (
-      <div
-         ref={sliderRef}
-         className={`${className} shadow-md rounded-3xl keen-slider shadow-black/50`}
-      >
-         <div className="shadow-md keen-slider__slide shadow-black/50">
-            <Image
-               src={"/images/carousel-a.jpg"}
-               height={500}
-               width={2000}
-               alt="Slide image"
-               className="object-cover rounded-3xl h-[250px] shadow-md shadow-black/50"
-            />
-         </div>
-         <div className="keen-slider__slide">
-            <Image
-               src={"/images/carousel-b.jpg"}
-               height={500}
-               width={2000}
-               alt="Slide image"
-               className="object-cover rounded-3xl h-[250px] shadow-md shadow-black/50"
-            />
-         </div>
-         <div className="keen-slider__slide">
-            <Image
-               src={"/images/carousel-c.jpg"}
-               height={500}
-               width={2000}
-               alt="Slide image"
-               className="object-cover rounded-3xl h-[250px] shadow-md shadow-black/50"
-            />
-         </div>
-         <div className="keen-slider__slide">
-            <Image
-               src={"/images/carousel-d.jpg"}
-               height={500}
-               width={2000}
-               alt="Slide image"
-               className="object-cover rounded-3xl h-[250px] shadow-md shadow-black/50"
-            />
+      <div className="px-5">
+         <div
+            ref={sliderRef}
+            className={`${className} shadow-md rounded-3xl keen-slider shadow-black/50`}
+         >
+            <div className="shadow-md keen-slider__slide shadow-black/50">
+               <Image
+                  src={"/images/carousel-a.jpg"}
+                  height={500}
+                  width={2000}
+                  alt="Slide image"
+                  className="object-cover rounded-3xl h-[325px] md:h-[250px] shadow-md shadow-black/50"
+               />
+            </div>
+            <div className="keen-slider__slide">
+               <Image
+                  src={"/images/carousel-b.jpg"}
+                  height={500}
+                  width={2000}
+                  alt="Slide image"
+                  className="object-cover rounded-3xl h-[325px] md:h-[250px] shadow-md shadow-black/50"
+               />
+            </div>
+            <div className="keen-slider__slide">
+               <Image
+                  src={"/images/carousel-c.jpg"}
+                  height={500}
+                  width={2000}
+                  alt="Slide image"
+                  className="object-cover rounded-3xl h-[325px] md:h-[250px] shadow-md shadow-black/50"
+               />
+            </div>
+            <div className="keen-slider__slide">
+               <Image
+                  src={"/images/carousel-d.jpg"}
+                  height={500}
+                  width={2000}
+                  alt="Slide image"
+                  className="object-cover rounded-3xl h-[325px] md:h-[250px] shadow-md shadow-black/50"
+               />
+            </div>
          </div>
       </div>
    );
