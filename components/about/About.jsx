@@ -14,7 +14,7 @@ import Carousel from "./Carousel";
 export default function About() {
    return (
       <div className="relative">
-         <Container className="py-5 mb-16">
+         <Container className="py-5 mb-12">
             <div className="flex flex-col justify-between gap-16 px-5 mb-10 text-center lg:flex-row md:text-left">
                <div>
                   <h1

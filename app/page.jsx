@@ -1,6 +1,7 @@
 import About from "@/components/about/About";
 import CTA from "@/components/cta/CTA";
 import Hero from "@/components/hero/Hero";
+import News from "@/components/news/News";
 import Pricing from "@/components/pricing/Pricing";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <main>
          <Hero />
          <About />
+         <News />
          <Pricing />
          <CTA />
       </main>
