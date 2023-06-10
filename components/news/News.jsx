@@ -10,6 +10,7 @@ import NewsCard from "./NewsCard";
 
 const news = [
    {
+      id: 1,
       title: "100 Holes in a Day",
       description:
          "Alex Fowler is attempting to do 100 holes in one day - on the 30th of June. His first round is starting at 4:30am in the morning running all day and hopefully aiming to get finished at about 9:30pm All money raised...",
@@ -17,6 +18,7 @@ const news = [
       link: "/news/100-holes-in-a-day",
    },
    {
+      id: 2,
       title: "2023 English Senior Women's Amateur Championship",
       description:
          "Preston Golf Club is proud to host the English Senior Ladies Strokeplay Championship. Official practice day is Monday 19th June which you can book via the England Golf Senior Ladies Championship page. Tee Times: Tues &...",
@@ -24,6 +26,7 @@ const news = [
       link: "/news/english-senior-womans-amateur-championship",
    },
    {
+      id: 3,
       title: "The Preston Challenge is Recognised",
       description:
          "The complexity and inviting challenge of Preston Golf Course has been fully recognised following publication of its Course and Slope Rating, as part of the national introduction of the World Handicap System. This...",
@@ -50,7 +53,7 @@ export default function News() {
             </p>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                {news.map((item) => (
-                  <NewsCard data={item} />
+                  <NewsCard key={item.id} data={item} />
                ))}
             </div>
          </Container>

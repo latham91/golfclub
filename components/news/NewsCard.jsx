@@ -18,15 +18,17 @@ export default function NewsCard({ data }) {
             draggable={false}
             className="w-full transition object-fit max-h-[250px] h-full"
          />
-         <div className="bottom-0 left-0 w-full h-full p-5 bg-slate-800">
-            <h1
-               className={`${playfairDisplay.className} mb-2 text-2xl font-semibold text-white`}
-            >
-               {data.title}
-            </h1>
-            <p className="mb-2 text-sm text-white md:text-base">
-               {data.description}
-            </p>
+         <div className="bottom-0 left-0 flex flex-col justify-between w-full h-full p-5 bg-slate-800">
+            <div>
+               <h1
+                  className={`${playfairDisplay.className} mb-2 text-2xl font-semibold text-white`}
+               >
+                  {data.title}
+               </h1>
+               <p className="mb-2 text-sm text-white md:text-base">
+                  {data.description}
+               </p>
+            </div>
             <div className="w-full font-semibold text-teal-500 hover:underline">
                Read more...
             </div>
