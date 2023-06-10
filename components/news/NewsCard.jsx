@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function NewsCard({ data }) {
    return (
-      <div className="overflow-hidden border-4 flex flex-col justify-between hover:border-slate-500/80 transition border-slate-500/30 rounded-3xl max-h-[500px] cursor-pointer relative">
+      <div className="overflow-hidden border-4 flex flex-col justify-between hover:border-slate-500/80 transition shadow-md border-slate-500/30 rounded-3xl max-h-[500px] cursor-pointer relative">
          <Image
             src={data.image}
             height={200}

@@ -9,7 +9,7 @@ const playfairDisplay = Playfair_Display({
 
 import Container from "../utility/Container";
 import Image from "next/image";
-import Carousel from "./Carousel";
+import Slider from "./Slider";
 
 export default function About() {
    return (
@@ -61,18 +61,19 @@ export default function About() {
                      the annals of golfing glory.
                   </p>
                </div>
-               <div className="flex items-center justify-center">
+               <div className="flex flex-col items-center justify-end">
                   <Image
                      src={"/images/about-b.jpg"}
                      width={3500}
                      height={1000}
                      alt="Golf Course Green"
                      draggable={false}
-                     className="shadow-lg rounded-3xl object-fit shadow-black/30"
+                     className="shadow-lg rounded-3xl object-cover h-[400px] shadow-black/30"
                   />
                </div>
             </div>
-            <Carousel />
+            {/* <Carousel /> */}
+            <Slider />
          </Container>
       </div>
    );

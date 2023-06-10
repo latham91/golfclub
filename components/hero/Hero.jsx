@@ -10,7 +10,7 @@ import Container from "../utility/Container";
 
 export default function Hero() {
    return (
-      <Container hero className="relative pt-20 md:pt-0">
+      <Container hero className="relative md:pt-0">
          <div className="relative">
             <Image
                src={"/images/championship.png"}
@@ -18,7 +18,7 @@ export default function Hero() {
                height={120}
                alt="England Golf Championship Venue"
                draggable={false}
-               className="absolute z-10 hidden p-3 bg-white border-2 rounded-full lg:block border-black/50 right-52 top-32"
+               className="absolute z-10 hidden p-3 bg-white border-2 rounded-full lg:block border-black/50 right-52 top-16"
             />
             <Image
                src="/images/hero-a.jpg"
@@ -28,18 +28,18 @@ export default function Hero() {
                className="w-full max-h-[900px] object-cover"
             />
             <div className="absolute top-0 left-0 flex flex-row w-full h-full bg-gradient-to-r from-slate-900 via-transparent to-slate-900">
-               <div className="flex flex-col items-center justify-center w-full h-full pt-20 px-7 2xl:max-w-7xl 2xl:mx-auto">
+               <div className="flex flex-col items-center justify-center w-full h-full px-7 2xl:max-w-7xl 2xl:mx-auto">
                   <Image
                      src={"/images/pgclogo.png"}
-                     width={120}
-                     height={120}
+                     width={160}
+                     height={160}
                      alt="Preston Golf Club"
                      draggable={false}
                      style={{
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
-                     className="z-10 lg:block md:block"
+                     className="z-10 lg:block md:block w-[140px] lg:[160px]"
                   />
 
                   <h1
@@ -47,7 +47,7 @@ export default function Hero() {
                         filter:
                            "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.45))",
                      }}
-                     className={`${playfairDisplay.className} hidden lg:block md:block z-10 text-center text-white mb-5 text-5xl font-extrabold lg:text-8xl md:text-7xl`}
+                     className={`${playfairDisplay.className} hidden lg:block md:block z-10 text-center text-white mb-5 text-5xl font-extrabold lg:text-[120px] md:text-7xl`}
                   >
                      Welcome to
                      <br />

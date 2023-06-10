@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-horizontal {
+   border-radius: 30px;
+}
+
+.swiper-slide {
+   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.swiper-button-prev {
+   color: rgb(32, 208, 208) !important;
+   opacity: 0.75;
+}
+
+.swiper-button-next {
+   color: rgb(32, 208, 208) !important;
+   opacity: 0.75;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: rgb(32, 208, 208) !important;
+   opacity: 0.75;
+}
